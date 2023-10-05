@@ -1,5 +1,7 @@
-# Developing a Simple Webserver
+# DEVELOPING A SIMPLE WEBSERVER
+name : poojasree B
 
+reference number:23012790
 # AIM:
 
 Develop a webserver to display about top five web application development frameworks.
@@ -26,9 +28,34 @@ Serving the HTML pages.
 
 Testing the webserver
 # PROGRAM:
-Type your code here
-# OUTPUT:
+```
+from http.server import HTTPServer, BaseHTTPRequestHandler
+
+content= """
+<html>
+<head>
+</head>
+<body>
+<h1>welcome</h1>
+</body>
+</html>
+"""
+class HelloHandler(BasedHTTPRequestHandler):
+    def do_GET(self):
+        self.send-response(200)
+        self.send_header('content-type','text/html;charset=utf-8')
+        self.end_heardes()
+        self.wfile.write(content.encode())
+
+server_address=('',80)
+httpdd=HTTPServer(server_address,HelloHandler)
+httpd.serve_forever()
+```
+
+## OUTPUT:
+![Alt text](images/webserver1.png)
+
 
 # RESULT:
 
-The program is executed succesfully.....
+The program is executed succesfully.
