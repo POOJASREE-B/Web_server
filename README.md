@@ -1,9 +1,9 @@
 # DEVELOPING A SIMPLE WEBSERVER
-name : Poojasree B
+NAME : Poojasree B
 
-reference number : 23012790
+REFERENCE NUMBER : 23012790
 
-Department : Computer science and engineering(CSE)
+DEPARTMENT : Computer science and engineering(CSE)
 # AIM:
 
 Develop a webserver to display about top five web application development frameworks.
